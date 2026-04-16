@@ -139,7 +139,10 @@ export default function Auth() {
                 </div>
               </CardContent>
               <CardFooter className="flex flex-col gap-6 pt-4 pb-8">
-                <Button className="w-full bg-white text-black hover:bg-white/90 font-bold h-12 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+                <Button 
+                  onClick={() => navigate("/dashboard")}
+                  className="w-full bg-white text-black hover:bg-white/90 font-bold h-12 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                >
                   {mode === "login" ? "Sign In" : "Create Account"}
                 </Button>
                 <p className="text-xs text-center text-white/30 leading-relaxed px-4">
