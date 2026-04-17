@@ -268,9 +268,9 @@ export default function Landing() {
                 )}
                 <Card className={`p-10 h-full flex flex-col glass-card ${plan.popular ? 'ring-2 ring-primary/50 bg-white/[0.05]' : ''}`}>
                   <div className="mb-10">
-                    <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-white uppercase tracking-tight">{plan.name}</h3>
                     <div className="flex items-baseline gap-2 mb-6">
-                      <span className="text-5xl font-bold">{plan.price}</span>
+                      <span className="text-5xl font-bold text-white">{plan.price}</span>
                       <span className="text-white/30 text-lg">/mo</span>
                     </div>
                     <p className="text-white/70 font-light">{plan.description}</p>
@@ -325,7 +325,7 @@ export default function Landing() {
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center">
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
-                <span className="font-display font-bold text-2xl tracking-tight">Lumina AI</span>
+                <span className="font-display font-bold text-2xl tracking-tight text-white">Lumina AI</span>
               </div>
               <p className="text-white/70 max-w-xs font-light leading-relaxed">
                 Empowering the next generation of visual storytellers with cutting-edge artificial intelligence.

@@ -93,7 +93,7 @@ export default function Dashboard() {
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center shadow-lg shadow-primary/20">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
-          <span className="font-display font-bold text-2xl tracking-tight">Lumina</span>
+          <span className="font-display font-bold text-2xl tracking-tight text-white">Lumina</span>
         </div>
 
         <nav className="flex-grow space-y-2">
@@ -136,7 +136,7 @@ export default function Dashboard() {
                       <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center">
                         <Sparkles className="w-5 h-5 text-white" />
                       </div>
-                      <span className="font-display font-bold text-xl tracking-tight">Lumina</span>
+                      <span className="font-display font-bold text-xl tracking-tight text-white">Lumina</span>
                     </div>
                     <nav className="flex-grow space-y-2">
                       <SidebarItem icon={LayoutDashboard} label="Dashboard" active />
