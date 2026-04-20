@@ -351,7 +351,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-6">
-            <p className="text-sm text-white/40 font-light">© 2024 Lumina AI. Crafted with passion for creators.</p>
+            <p className="text-sm text-white/40 font-light">© 2026 Lumina AI. Crafted with passion for creators.</p>
             <div className="flex items-center gap-8 text-sm text-white/40">
               <a href="#" className="hover:text-white transition-colors">Privacy</a>
               <a href="#" className="hover:text-white transition-colors">Terms</a>
