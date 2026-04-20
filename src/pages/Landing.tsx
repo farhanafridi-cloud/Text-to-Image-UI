@@ -130,7 +130,7 @@ export default function Landing() {
             <Badge variant="outline" className="mb-8 py-2 px-6 rounded-full bg-white/5 border-white/10 text-purple-400 font-medium tracking-wide animate-pulse">
               ✨ Experience the New Standard of AI Art
             </Badge>
-            <h1 className="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-[0.9] text-white">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter leading-[0.9] text-white">
               <span className="inline-block">Create</span>{" "}
               <span className="inline-block bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient">Impossible</span>{" "}
               <span className="inline-block">Visuals</span>
@@ -228,12 +228,12 @@ export default function Landing() {
           >
             {features.map((feature, i) => (
               <motion.div key={i} variants={itemVariants}>
-                <Card className="p-10 glass-card glass-card-hover h-full group">
-                  <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500">
+                <Card className="p-6 sm:p-10 glass-card glass-card-hover h-full group">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-6 sm:mb-8 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500">
                     {feature.icon}
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white"> {feature.title}</h3>
-                  <p className="text-lg text-white/70 leading-relaxed font-light">{feature.description}</p>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white"> {feature.title}</h3>
+                  <p className="text-base sm:text-lg text-white/70 leading-relaxed font-light">{feature.description}</p>
                 </Card>
               </motion.div>
             ))}
@@ -266,16 +266,16 @@ export default function Landing() {
                     </Badge>
                   </div>
                 )}
-                <Card className={`p-10 h-full flex flex-col glass-card ${plan.popular ? 'ring-2 ring-primary/50 bg-white/[0.05]' : ''}`}>
-                  <div className="mb-10">
-                    <h3 className="text-2xl font-bold mb-4 text-white uppercase tracking-tight">{plan.name}</h3>
-                    <div className="flex items-baseline gap-2 mb-6">
-                      <span className="text-5xl font-bold text-white">{plan.price}</span>
-                      <span className="text-white/30 text-lg">/mo</span>
+                <Card className={`p-6 sm:p-10 h-full flex flex-col glass-card ${plan.popular ? 'ring-2 ring-primary/50 bg-white/[0.05]' : ''}`}>
+                  <div className="mb-8 sm:mb-10">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white uppercase tracking-tight">{plan.name}</h3>
+                    <div className="flex items-baseline gap-2 mb-4 sm:mb-6">
+                      <span className="text-4xl sm:text-5xl font-bold text-white">{plan.price}</span>
+                      <span className="text-white/30 text-base sm:text-lg">/mo</span>
                     </div>
-                    <p className="text-white/70 font-light">{plan.description}</p>
+                    <p className="text-sm sm:text-base text-white/70 font-light">{plan.description}</p>
                   </div>
-                  <div className="space-y-5 mb-12 flex-grow">
+                  <div className="space-y-4 sm:space-y-5 mb-8 sm:mb-12 flex-grow">
                     {plan.features.map((feature, j) => (
                       <div key={j} className="flex items-center gap-4">
                         <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0">

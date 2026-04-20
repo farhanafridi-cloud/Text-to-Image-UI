@@ -52,10 +52,8 @@ export default function Navbar() {
           {/* Mobile Menu Trigger */}
           <div className="md:hidden ml-1">
             <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-                  <Menu className="w-6 h-6" />
-                </Button>
+              <SheetTrigger render={<Button variant="ghost" size="icon" className="text-white hover:bg-white/10" />}>
+                <Menu className="w-6 h-6" />
               </SheetTrigger>
               <SheetContent side="right" className="bg-black/95 border-white/10 text-white w-[300px]">
                 <SheetHeader className="text-left mb-8">
